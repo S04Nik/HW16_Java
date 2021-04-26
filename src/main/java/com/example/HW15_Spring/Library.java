@@ -1,18 +1,20 @@
 package com.example.HW15_Spring;
 
+import org.springframework.stereotype.Component;
+
 import java.util.HashSet;
 import java.util.List;
-
+@Component
 public class Library {
     public String name;
     public String city;
     public List<Author> authors;
     public List<Book> books;
     Library(){}
-    Library(List<Author> authors, List<Book> books){
-        this.authors=authors;
-        this.books=books;
-    }
+//    Library(List<Author> authors, List<Book> books){
+//        this.authors=authors;
+//        this.books=books;
+//    }
 
     public String getName() {
         return name;
